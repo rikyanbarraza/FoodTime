@@ -1,1 +1,8 @@
-[{"name": "meat balls"}]
+{
+    "meals": [ 
+        {
+        "idMeal": "52820",
+        "strMeal": "Katsu Chicken curry"
+        }
+    ]
+}
