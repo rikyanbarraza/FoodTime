@@ -4,13 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script defer src="logic.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel = "stylesheet" href = "style.css">
     <title>Food Time!</title>
 </head>
 <body>
-    <button onclick="collectText()">Hämta text</button>
-    <button onclick="saveNew()">Spara ny!</button>
-    <h1></h1>
+    <div class="container">
+        <h1>Find the next meal idé here</h1>
+        <div class="form-wrapper">
+            <form class="form" id="form-submit">
+                <input type="text" placeholder="Hungry?" id="search" />
+                <button onclick="addApiData()" class="search-btn" id="search-btn" type="submit">Search</button>
+            </form>
+            <button class="random-btn" id="random-btn">Random</button>
+            <button onclick="fetchApiData()" class="my-btn" id="my-btn">My Fav</button>
+        </div>
+        <div id="keyword"></div>
+        <div id="meals" class="meals"></div>
+        <div id="meal"></div>
+    </div>
+    <script src = "logic.js"></script>
 </body>
 </html>
