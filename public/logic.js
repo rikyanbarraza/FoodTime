@@ -135,6 +135,7 @@ async function collectText() {
     const header = document.getElementsByTagName("h1")[0]
     header.innerText = textToDisplay
 }
+
 async function fetchApiData() {
     const status = await makeRequest("/api/meals", "GET")
     document.getElementById("meal").innerText=status 
@@ -161,4 +162,3 @@ async function makeRequest(url, method, body) {
         console.error(err)
     }
 }
-
